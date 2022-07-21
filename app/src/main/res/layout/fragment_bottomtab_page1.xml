@@ -1,10 +1,176 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:visibility="visible"
     tools:context=".BottomTabPage1">
     <!-- 投資比率タブ-->
     <!-- ココにタブの中身のレイアウトを記述してください。 -->
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <!--        １列目-->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:padding="5dp"
+                    android:text="ファンド名" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:padding="5dp"
+                    android:text="保有金額" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:padding="5dp"
+                    android:text="保有比率(%)" />
+            </TableRow>
+
+            <!--        ２列目-->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/fundName1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:padding="5dp" />
+
+                <EditText
+                    android:id="@+id/kingaku1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:digits="0123456789"
+                    android:gravity="center_horizontal"
+                    android:inputType="number"
+                    android:maxLength="20"
+                    android:padding="5dp" />
+                <!--入力値を数字にし、0~9まで、桁数20まで-->
+
+                <TextView
+                    android:id="@+id/hiritsu1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:padding="5dp"
+                    android:text="○○％" />
+            </TableRow>
+
+            <!--        ３列目-->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/fundName2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:padding="5dp" />
+
+                <EditText
+                    android:id="@+id/kingaku2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:digits="0123456789"
+                    android:gravity="center_horizontal"
+                    android:inputType="number"
+                    android:maxLength="20"
+                    android:padding="5dp"/>
+                <!--入力値を数字にし、0~9まで、桁数20まで-->
+
+                <TextView
+                    android:id="@+id/hiritsu2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:padding="5dp"
+                    android:text="○○％" />
+            </TableRow>
+
+            <!--        ４列目-->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/fundName3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:padding="5dp" />
+
+                <EditText
+                    android:id="@+id/kingaku3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:digits="0123456789"
+                    android:gravity="center_horizontal"
+                    android:inputType="number"
+                    android:maxLength="20"
+                    android:padding="5dp"/>
+                <!--入力値を数字にし、0~9まで、桁数20まで-->
+
+                <TextView
+                    android:id="@+id/hiritsu3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:padding="5dp"
+                    android:text="○○％" />
+            </TableRow>
+        </TableLayout>
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/container"
+            android:text="保有比率計算"
+            android:onClick="changeText1"/>
+
+    </RelativeLayout>
+
+
+
 
 </FrameLayout>

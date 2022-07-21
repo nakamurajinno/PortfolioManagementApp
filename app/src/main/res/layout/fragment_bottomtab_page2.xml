@@ -6,5 +6,187 @@
     tools:context=".BottomTabPage2">
     <!-- リターンタブ-->
     <!-- ココにタブの中身のレイアウトを記述してください。 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TableLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp">
+
+        <!--        １列目-->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:padding="5dp"
+                android:text="ファンド名" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:padding="5dp"
+                android:text="リターン（年率）（％）" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:padding="5dp"
+                android:text="保有比率(%)" />
+        </TableRow>
+
+        <!--        ２列目-->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <EditText
+                android:id="@+id/fundName1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:padding="5dp" />
+
+            <EditText
+                android:id="@+id/return1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:digits="0123456789"
+                android:gravity="center_horizontal"
+                android:inputType="number"
+                android:maxLength="20"
+                android:padding="5dp" />
+
+            <TextView
+                android:id="@+id/hiritsu1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:padding="5dp"
+                android:text="30" />
+        </TableRow>
+
+        <!--        ３列目-->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <EditText
+                android:id="@+id/fundName2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:padding="5dp" />
+
+            <EditText
+                android:id="@+id/return2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:digits="0123456789"
+                android:gravity="center_horizontal"
+                android:inputType="number"
+                android:maxLength="20"
+                android:padding="5dp" />
+
+            <TextView
+                android:id="@+id/hiritsu2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:padding="5dp"
+                android:text="30" />
+        </TableRow>
+
+        <!--        ４列目-->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <EditText
+                android:id="@+id/fundName3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:padding="5dp" />
+
+            <EditText
+                android:id="@+id/return3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:digits="0123456789"
+                android:gravity="center_horizontal"
+                android:inputType="number"
+                android:maxLength="20"
+                android:padding="5dp" />
+
+            <TextView
+                android:id="@+id/hiritsu3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:padding="5dp"
+                android:text="40" />
+        </TableRow>
+
+        <!--5列目-->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:text="平均リターン(%)"
+                android:gravity="center_horizontal"/>
+
+            <TextView
+                android:id="@+id/ave_return"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:text="○○％"
+                android:gravity="center_horizontal"/>
+
+        </TableRow>
+    </TableLayout>
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/container"
+            android:text="平均リターン計算"
+            android:onClick="changeText2"/>
+
+    </RelativeLayout>
+
 
 </FrameLayout>
