@@ -39,40 +39,6 @@ public class MainActivity extends AppCompatActivity {
         new TabLayoutMediator(tabs, pager,
                 (tab, position) -> tab.setText(tabTitleArray[position])
         ).attach();
-
-//        EditText txt = (EditText)view1.findViewById(R.id.kingaku);
-//        txt.addTextChangedListener( new TextWatcher() {
-//
-//            // 文字列sのなかで startの位置から開始されている字数countの文字が、
-//            // 字数lengthの古いテキストを置換するときに呼び出される。
-//            @Override
-//            public void onTextChanged(CharSequence s, int start, int before, int count) {
-//                // TODO Auto-generated method stub
-//
-//            }
-//
-//            // 文字列sのなかで startの位置から開始されている字数countの文字が、
-//            // 字数lengthの新しいテキストで置換されようとしているときに呼び出される。
-//            @Override
-//            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-//                // TODO Auto-generated method stub
-//
-//            }
-//
-//            // 文字列sのどこかで、テキストが変更されたときに呼び出される。
-//            @Override
-//            public void afterTextChanged(Editable s) {
-//                // TODO Auto-generated method stub
-//
-//            }
-//        } );
-
-//        int i = 0;
-//        String text = String.valueOf(i);
-        // inflate
-//        LayoutInflater mylayoutInflator = getLayoutInflater();
-//        View view1 = mylayoutInflator.inflate(R.layout.fragment_bottomtab_page1, null);
-        //テキスト入れ込み
     }
 
 
