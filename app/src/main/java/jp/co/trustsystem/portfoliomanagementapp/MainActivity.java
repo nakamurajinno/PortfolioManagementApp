@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
         new TabLayoutMediator(tabs, pager,
                 (tab, position) -> tab.setText(tabTitleArray[position])
         ).attach();
+
     }
 
 
